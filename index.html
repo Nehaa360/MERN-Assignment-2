@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is just a trial page for HTML session">
+    <link rel="icon" href="icon2.png" />
+    <link rel="stylesheet" href="index.css">
+    <title>Profiles</title>
+</head>
+
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <div id="input-container">
+        <input list="userIds" id="userId_Input" placeholder="Select or Enter User ID">
+        <datalist id="userIds">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+        </datalist>
+        <button onclick="fetchData()">Fetch User</button>
+    </div>
+    <table id="userlist">
+        <tr>
+            <th>ID</th>
+            <th>Avatar</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
